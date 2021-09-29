@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>jQuery数字闹钟DEMO演示</title>
+
+		<!-- The main CSS file -->
+		<link href="css/style.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div id="clock" class="light">
+			<div class="display">
+				<div class="weekdays"></div>
+				<div class="ampm"></div>
+				<div class="alarm"></div>
+				<div class="digits"></div>
+			</div>
+		</div>
+
+		<div class="button-holder">
+			<a id="switch-theme" class="button">切换主题</a>
+			<a class="alarm-button"></a>
+		</div>
+
+		<!-- The dialog is hidden with css -->
+		<div class="overlay">
+
+			<div id="alarm-dialog">
+
+				<h2>设置倒计时</h2>
+
+				<label class="hours">
+					小时
+					<input type="number" value="0" min="0" />
+				</label>
+
+				<label class="minutes">
+					分钟
+					<input type="number" value="0" min="0" />
+				</label>
+
+				<label class="seconds">
+					秒
+					<input type="number" value="0" min="0" />
+				</label>
+
+				<div class="button-holder">
+					<a id="alarm-set" class="button blue">设置</a>
+					<a id="alarm-clear" class="button red">清除</a>
+				</div>
+
+				<a class="close"></a>
+
+			</div>
+
+		</div>
+
+		<div class="overlay">
+
+			<div id="time-is-up">
+
+				<h2>时间&#39;到了!</h2>
+
+				<div class="button-holder">
+					<a class="button blue">关闭</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<audio id="alarm-ring" preload loop>
+			<source src="audio/ticktac.mp3" type="audio/mpeg" />
+			<source src="audio/ticktac.ogg" type="audio/ogg" />
+		</audio>
+
+        
+		<!-- JavaScript Includes -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/moment.min.js"></script>
+		<script src="js/script.js"></script>
+<div style="text-align:center;clear:both">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+	</body>
+</html>
